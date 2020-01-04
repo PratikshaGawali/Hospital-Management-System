@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="372.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospital.AdmitPageController">
+   <children>
+      <ImageView fitHeight="601.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../hosp2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="106.0" text="Patient ID :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="180.0" text="First Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="530.0" layoutY="180.0" text="Last Name :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="251.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="315.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="385.0" text="AdmitDate :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="385.0" text="Discharge Date :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="460.0" text="RoomNo :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pid" layoutX="356.0" layoutY="103.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="fname" layoutX="170.0" layoutY="177.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lname" layoutX="642.0" layoutY="177.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phno" layoutX="170.0" layoutY="248.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" layoutX="169.0" layoutY="312.0" onAction="#actionPerformed" prefHeight="26.0" prefWidth="622.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="admitDate" layoutX="170.0" layoutY="382.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="dischDate" layoutX="642.0" layoutY="382.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <TextField fx:id="room_no" layoutX="170.0" layoutY="457.0" onAction="#actionPerformed">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <Button fx:id="ok" layoutX="249.0" layoutY="531.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="30.0" prefWidth="72.0" text="OK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="601.0" layoutY="531.0" mnemonicParsing="false" onAction="#actionPerformed" prefHeight="30.0" prefWidth="72.0" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="388.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PATIENT DETAILS" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
